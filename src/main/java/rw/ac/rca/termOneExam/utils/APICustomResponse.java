@@ -8,8 +8,15 @@ public class APICustomResponse {
 	private String message;
 	private City data;
 
-	public APICustomResponse(boolean status, String message, City city) {
+
+	
+	public APICustomResponse(boolean status, String message, City data) {
+		super();
+		this.status = status;
+		this.message = message;
+		this.data = data;
 	}
+
 
 	public boolean isStatus() {
 		return status;
@@ -27,9 +34,7 @@ public class APICustomResponse {
 		this.message = message;
 	}
 
-	public City getData() {
-		return data;
-	}
+	public City getData(){ return data;}
 
 	public void setData(City data) {
 		this.data = data;
