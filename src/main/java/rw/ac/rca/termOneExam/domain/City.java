@@ -1,5 +1,7 @@
 package rw.ac.rca.termOneExam.domain;
 
+import rw.ac.rca.termOneExam.dto.CreateCityDTO;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -37,6 +39,10 @@ public class City {
 		this.weather = weather;
 		this.fahrenheit = fahrenheit;
 	}
+
+	public City(CreateCityDTO createCityDTO) {
+	}
+
 
 
 	public long getId() {

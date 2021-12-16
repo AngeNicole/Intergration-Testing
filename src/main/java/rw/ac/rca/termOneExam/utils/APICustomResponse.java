@@ -1,23 +1,15 @@
 package rw.ac.rca.termOneExam.utils;
 
+import rw.ac.rca.termOneExam.domain.City;
+
 public class APICustomResponse {
 
 	private boolean status;
-	
 	private String message;
+	private City data;
 
-	
-	public APICustomResponse() {
-		super();
+	public APICustomResponse(boolean status, String message, City city) {
 	}
-
-	
-	public APICustomResponse(boolean status, String message) {
-		super();
-		this.status = status;
-		this.message = message;
-	}
-
 
 	public boolean isStatus() {
 		return status;
@@ -34,6 +26,12 @@ public class APICustomResponse {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	
-	
+
+	public City getData() {
+		return data;
+	}
+
+	public void setData(City data) {
+		this.data = data;
+	}
 }
